@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>B.V.Bhoomaraddi collage </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style>
+    /* Add this style to your existing stylesheet or create a new one */
+.president-message {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+}
+.container p{
+  font-size: 14px;
+  text-align: left;
+}
+
+.message-text {
+    flex: 1;
+   
+    padding-left: 100px ;
+    padding-right: 100px;
+}
+
+.president-photo img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.president-photo h4{
+  color: red;
+  text-align: center;
+  font-size: 32px;
+}
+
+
+@media (max-width: 768px){
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: hidden;
+  }
+.message-text{
+  
+  height: 160px;
+     
+  padding-left: 60px ;
+    padding-right: 60px;
+   
+}
+.message-text p{
+  font-size: 12px;
+}
+}
+
+
+.navbar{
+    background:linear-gradient(45deg, rgb(173, 153, 153),#130909)!important;
+    
+  
+}
+.navbar-toggler-icon{
+  color: #eee;
+}
+.dropdown{
+    border-radius:0;
+    border:0;
+}
+.dropdown-menu{
+    background: #0c73cc;
+    border:0;
+    top:100%;
+    border-radius:0px 0px 1px 1px;
+}
+.dropdown-item:hover{
+    background:#085ca5;
+    color:#fff;
+}
+.dropdown-menu a{
+    color:#fff;
+} 
+.navbar .nav-item .nav-link{
+    color:#fff !important; 
+    
+}
+.navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link{
+    color:white !important;
+    
+}
+.navc a{
+font-size: 16px;
+color: #fff;
+padding: 6px;
+}
+.navc{
+  margin-top: 4px;
+  width: 100%;
+}
+.navc li{
+  margin-right: 5px;
+  margin-left: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.dropdown-item{
+  font-size: 12px;
+}
+@media (max-width: 768px){
+  .navc a{
+font-size: 11px;
+padding: 4px;
+
+}
+.navc li{
+
+  padding-left: 1px;
+  padding-right: 1px;
+  
+}
+}
+.background-section {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust the height based on your design */
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+    height: 100%;
+    z-index: -1;
+}
+
+.background-image img {
+    width: 100%;
+  
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    text-align: center;
+    color: white;
+}
+
+.text-container h2 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text-container p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+</style>
+<script>
+  	$(document).ready(function () {
+$('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+    });
+});
+</script>
+   
+  </head>
+
+ 
+<body class="top">
+    
+    <section>
+        <div class="brt">
+            <div class="socialtop">
+            <div class="top-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                 <a href="#"><i class="fa fa-twitter"></i></a>
+                 <a href="#"><i class="fa fa-instagram"></i></a>
+                 <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+          </div>
+    </section>
+       <section>
+            <div class="header">
+              <img src="hkelogo.png" alt="Logo 1" class="logo logo-left">
+              <div class="collage-name">
+                 <p class="hke"> H.K.E. Society's</p>
+                  <p class="bold-text">B.V.BHOOMARADDI College of Arts, Science</p>
+                  <p class="bold-text">and Commerce , Bidar</p>
+              </div>
+              <img src="bvblogo.jpg" alt="Logo 2" class="logo logo-right">
+          </div>
+          
+         
+          
+          </section>
+          <section class="navc">
+            <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+              
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown dmenu">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        About
+                      </a>
+                      <div class="dropdown-menu sm-menu">
+                        <a class="dropdown-item" href="history.html">College History<span class="sr-only">(current)</span> </a>
+                        <a class="dropdown-item" href="vision and mission.html">Vision & Mission</a>
+                        <a class="dropdown-item" href="president message.html">President's Message</a>
+                        <a class="dropdown-item" href="council members.html">Council Member's</a>
+                        <a class="dropdown-item" href="principal.html">Principal's Message</a>
+                        <a class="dropdown-item" href="awards.html">Awards</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown dmenu">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Committe and cells
+                      </a>
+                      <div class="dropdown-menu sm-menu">
+                        <a class="dropdown-item" href="antiragging.html">Anti-ragging 21-22</a>
+                        <a class="dropdown-item" href="antisexual.html">Sexual harrasement cell 21-22</a>
+                        
+                        <a class="dropdown-item" href="grevillance.html">Student-Grievance-Redressal-Committee</a>
+                      </div>
+                    </li>
+                   
+                    <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Facilities
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="scout.html">N.C.C /N.S.S / Scouts & Guides</a>
+                      <a class="dropdown-item" href="health.html">Health Centre</a>
+                      <a class="dropdown-item" href="parking.html">Parking</a>
+                      <a class="dropdown-item" href="gymnasium.html">Gymnasium</a>
+                      <a class="dropdown-item" href="library.html">Library</a>
+                      <a class="dropdown-item" href="games.html">Games & Sports</a>
+                      <a class="dropdown-item" href="canteen.html">Cateen</a>
+                      <a class="dropdown-item" href="studentwelfare.html">Student Welfare Office</a>
+                     
+                      
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Courses 
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="bca.html">B.C.A</a>
+                      <a class="dropdown-item" href="bse.html">B.Sc</a>
+                      <a class="dropdown-item" href="bcom.html">B.Com</a>
+                      <a class="dropdown-item" href="Baa.html">B.A</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      staff
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="faci.html">Faculty </a>
+                      <a class="dropdown-item" href="dep.html">Departments</a>
+                      
+                    </div>
+                  </li>
+                   <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      IQAC
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="iaac.html">IQAC</a>
+                      <a class="dropdown-item" href="iiqa.html">IIQA</a>
+                      <a class="dropdown-item" href="agar.html">AQAR Links 18-19 </a>
+                      <a class="dropdown-item" href="agar2.html">AQAR Links 19-20 </a>
+                      <a class="dropdown-item" href="naac.html">NAAC</a>
+                      <a class="dropdown-item" href="dvv.html">DVV</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                  </li>
+                   
+                  </ul>
+                 
+                </div>
+              </nav>
+        </section>
+
+
+        <section class="background-section">
+            <div class="background-image">
+                <!-- Add your background image URL here -->
+                <img src="update2.png" alt="Background Image">
+            </div>
+            <div class="overlay">
+                <div class="container">
+                    <div class="text-container">
+                        <h2>
+                            History
+                        </h2>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+        <section class="president-message">
+
+            <div class="container">
+                <div class="message-text">
+                    <h2>Collage History</h2>
+                    <p>Bidar, a part of Hyderabad Karnataka area, remained economically and educationally backward area inspite of having rich cultural background. Our founder President, Late Shri.Mahadevappa Rampure did a yeoman service by realizing this and started B.V.B. College, in the year 1960 to provide educational opportunities to the youth of this backward area and made their educational dream come true. People stopped going to Hyderabad or Gulbarga for higher education. He was a great visionary, the 52 acres of land purchased in 1960’s is ample proof of his vision.
+
+                        This College is named after the famous philanthropist Shri.B.V. Bhoomaraddi from Gadag. It marked a new era in Bidar’s educational history.
+                        
+                        The College is affiliated to Gulbarga University Kalaburagi. It offers Six Semester Degree Course in Arts, Science, Commerce and Computer Application. Apart from this College offers four semesters M.Sc. Course in Computer Science.</p>
+             
+               
+                  </div>
+                  
+                <div class="president-photo">
+                    <img src="data:image/jpeg;base64,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" alt="President Photo"><br>
+                    <h4 >B.V.B Collage</h4>
+                </div>
+              
+            </div>
+        </section>
+        
+       
+
+
+
+
+        <footer>
+            <div class="foot">
+                <div class="row">
+                      <div class="col" id="company">
+          <h3>B.V.B</h3>
+                          <p>
+                            HKE Society is the prestigious educational institute of Karnataka has stressed to inculcate the value based education in all the institutions in fact it is the only organization which has been imparting higher education in backward region of the state, Bidar, Kalaburagi, Raichur and Yadgiri from past five decades.
+                          </p>
+                          <div class="social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+          
+          
+                      <div class="col" id="services">
+                        <h3>Useful-links</h3>
+                        <div class="links">
+                           <a href="https://hkes.edu.in/">H.K.E. Society’s</a>
+                           <a href="https://gug.ac.in/">Gulbarga University</a>
+                           <a href="rti.html">RTI</a>
+                           <a href="https://ndl.iitkgp.ac.in/">National digital library of india</a>
+                        </div>
+                     </div>
+         
+                     <div class="col" id="useful-links">
+                        <h3>Links</h3>
+                        <div class="links">
+                           <a href="index.html">Home</a>
+                           <a href="vision and mission.html">Vision and Mission</a>
+                           <a href="iaac.html">IQAC</a>
+                           <a href="contact.html">Contact us</a>
+                        </div>
+                     </div>
+         
+                     <div class="col" id="contact">
+                         <h3>Contact</h3>
+                         <div class="contact-details">
+                            <i class="fa fa-location"></i>
+                            <p>Basava Nagar,opposite Big Bazar, <br> Manalli Road, Bidar</p>
+                         </div>
+                         <div class="contact-details">
+                            <i class="fa fa-phone"></i>
+                            <p>08482-235207</p>
+                         </div>
+                     </div>
+               </div>
+          
+                <div class="row">
+                      <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Email here...">
+                            <button><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+          
+                </div>
+          <div class="copy">
+            <p>Made By B.C.A,BVB  @ 2023 BVBCB.All Rights Reserved   </p>
+          </div>
+            </div>
+          </footer>
+          <script>
+            $(document).ready(function(){
+              // Enable the carousel
+              $('#myCarousel').carousel();
+          
+              // Set interval to automatically slide to the next item every 3 seconds (3000 milliseconds)
+              setInterval(function(){
+                $('#myCarousel').carousel('next');
+              }, 1000);
+            });
+          </script>
+          
+          <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <script  src="function.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Check if the element is in the viewport
+                function isInViewport(element) {
+                    var rect = element.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                }
+        
+                // Add animation class when the section is in the viewport
+                function addAnimationClass() {
+                    var presidentMessage = document.querySelector('.president-message');
+                    if (isInViewport(presidentMessage)) {
+                        presidentMessage.classList.add('animate');
+                    }
+                }
+        
+                // Initial check on page load
+                addAnimationClass();
+        
+                // Check on scroll
+                window.addEventListener('scroll', function () {
+                    addAnimationClass();
+                });
+            });
+        </script>
+        
+          
+          </body>
+          
+          </html>

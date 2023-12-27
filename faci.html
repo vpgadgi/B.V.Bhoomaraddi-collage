@@ -1,0 +1,1479 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>B.V.Bhoomaraddi collage </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style>
+    /* Add this style to your existing stylesheet or create a new one */
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+}
+.container p{
+  font-size: 14px;
+  text-align: left;
+}
+
+.message-text {
+    flex: 1;
+   
+    padding-left: 100px ;
+    padding-right: 100px;
+}
+
+
+
+
+@media (max-width: 768px){
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: hidden;
+  }
+.message-text{
+  
+  height: 160px;
+     
+  padding-left: 60px ;
+    padding-right: 60px;
+   
+}
+.message-text p{
+  font-size: 12px;
+}
+}
+
+
+.navbar{
+    background:linear-gradient(45deg, rgb(173, 153, 153),#130909)!important;
+    
+  
+}
+.navbar-toggler-icon{
+  color: #eee;
+}
+.dropdown{
+    border-radius:0;
+    border:0;
+}
+.dropdown-menu{
+    background: #0c73cc;
+    border:0;
+    top:100%;
+    border-radius:0px 0px 1px 1px;
+}
+.dropdown-item:hover{
+    background:#085ca5;
+    color:#fff;
+}
+.dropdown-menu a{
+    color:#fff;
+} 
+.navbar .nav-item .nav-link{
+    color:#fff !important; 
+    
+}
+.navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link{
+    color:white !important;
+    
+}
+.navc a{
+font-size: 16px;
+color: #fff;
+padding: 6px;
+}
+.navc{
+  margin-top: 4px;
+  width: 100%;
+}
+.navc li{
+  margin-right: 5px;
+  margin-left: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.dropdown-item{
+  font-size: 12px;
+}
+@media (max-width: 768px){
+  .navc a{
+font-size: 11px;
+padding: 4px;
+
+}
+.navc li{
+
+  padding-left: 1px;
+  padding-right: 1px;
+  
+}
+}
+.background-section {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust the height based on your design */
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+   border-radius: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-image img {
+    width: 100%;
+  border-radius: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    text-align: center;
+    color: white;
+}
+
+.text-container h2 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 1.2em;
+    margin: 0;
+}
+.staff {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        table {
+            flex: 2;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        img {
+      width: 70px;
+      margin-left: 20px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+        .controls {
+            flex: 1;
+            position:relative;
+            top: 10px;
+            left: 10px;
+            margin-bottom: 20px; /* Add margin to create a gap */
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .staff {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+            .controls {
+                position: static;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 20px; /* Add margin to create a gap */
+            }
+
+            table {
+                width: 100%;
+                display: block;
+                font-size: 8px;
+                padding: 2px;
+                margin-top: 20px;
+            }
+            img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 2px;
+                text-align: center;
+            }
+        }
+
+        /* Animation styles */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .department-headline {
+            animation: fadeInUp 1s ease-out;
+            background-color: coral;
+            text-align: center;
+        }
+
+</style>
+<script>
+  	$(document).ready(function () {
+$('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+    });
+});
+</script>
+   
+  </head>
+
+ 
+<body class="top">
+    
+    <section>
+        <div class="brt">
+            <div class="socialtop">
+            <div class="top-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                 <a href="#"><i class="fa fa-twitter"></i></a>
+                 <a href="#"><i class="fa fa-instagram"></i></a>
+                 <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+          </div>
+    </section>
+       <section>
+            <div class="header">
+              <img src="hkelogo.png" alt="Logo 1" class="logo logo-left">
+              <div class="collage-name">
+                 <p class="hke"> H.K.E. Society's</p>
+                  <p class="bold-text">B.V.BHOOMARADDI College of Arts, Science</p>
+                  <p class="bold-text">and Commerce , Bidar</p>
+              </div>
+              <img src="bvblogo.jpg" alt="Logo 2" class="logo logo-right">
+          </div>
+          
+         
+          
+          </section>
+          <section class="navc">
+            <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+              
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown dmenu">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        About
+                      </a>
+                      <div class="dropdown-menu sm-menu">
+                        <a class="dropdown-item" href="history.html">College History<span class="sr-only">(current)</span> </a>
+                        <a class="dropdown-item" href="vision and mission.html">Vision & Mission</a>
+                        <a class="dropdown-item" href="president message.html">President's Message</a>
+                        <a class="dropdown-item" href="council members.html">Council Member's</a>
+                        <a class="dropdown-item" href="principal.html">Principal's Message</a>
+                        <a class="dropdown-item" href="awards.html">Awards</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown dmenu">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Committe and cells
+                      </a>
+                      <div class="dropdown-menu sm-menu">
+                        <a class="dropdown-item" href="antiragging.html">Anti-ragging 21-22</a>
+                        <a class="dropdown-item" href="antisexual.html">Sexual harrasement cell 21-22</a>
+                        
+                        <a class="dropdown-item" href="grevillance.html">Student-Grievance-Redressal-Committee</a>
+                      </div>
+                    </li>
+                   
+                    <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Facilities
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="scout.html">N.C.C /N.S.S / Scouts & Guides</a>
+                      <a class="dropdown-item" href="health.html">Health Centre</a>
+                      <a class="dropdown-item" href="parking.html">Parking</a>
+                      <a class="dropdown-item" href="gymnasium.html">Gymnasium</a>
+                      <a class="dropdown-item" href="library.html">Library</a>
+                      <a class="dropdown-item" href="games.html">Games & Sports</a>
+                      <a class="dropdown-item" href="canteen.html">Cateen</a>
+                      <a class="dropdown-item" href="studentwelfare.html">Student Welfare Office</a>
+                     
+                      
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Courses 
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="bca.html">B.C.A</a>
+                      <a class="dropdown-item" href="bse.html">B.Sc</a>
+                      <a class="dropdown-item" href="bcom.html">B.Com</a>
+                      <a class="dropdown-item" href="Baa.html">B.A</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      staff
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="faci.html">Faculty </a>
+                      <a class="dropdown-item" href="dep.html">Departments</a>
+                      
+                    </div>
+                  </li>
+                   <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      IQAC
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="iaac.html">IQAC</a>
+                      <a class="dropdown-item" href="iiqa.html">IIQA</a>
+                      <a class="dropdown-item" href="agar.html">AQAR Links 18-19 </a>
+                      <a class="dropdown-item" href="agar2.html">AQAR Links 19-20 </a>
+                      <a class="dropdown-item" href="naac.html">NAAC</a>
+                      <a class="dropdown-item" href="dvv.html">DVV</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                  </li>
+                   
+                  </ul>
+                 
+                </div>
+              </nav>
+        </section>
+
+
+       
+        
+
+
+        <section class="staff">
+            <div class="controls">
+                <button onclick="zoomIn()">Zoom In</button>
+                <button onclick="zoomOut()">Zoom Out</button>
+                <button onclick="downloadPdf()">Download</button>
+            </div>
+        
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Kannada</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/k1.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>	Dr. Babruwahana</td>
+                        <td>M.A., M.Ed., Ph.D., NET, KSET</td>
+                        <td>HOD and Asst. Prof.</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/k2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>	Smt. Shailaja Sidveer</td>
+                        <td>M.A., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/k3.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Smt. Renuka Malli</td>
+                        <td>M.A., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>9902275797<br>renukamalli72@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/k4.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Miss. Kaveri Khandre</td>
+                        <td>M.A., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>9902275797<br>kaverikhandreoo77@gmail.com</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+        
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: English</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/e1.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Dr. Mamata B. Natikar</td>
+                        <td>M.A., M.Ed., Ph.D.</td>
+                        <td>H.O.D & Asst. Prof.</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/e2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Dr. Shraddha Supekar Deshpande</td>
+                        <td>M.A., B.Ed., Ph.D.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/e3.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Miss Aishwarya Patil</td>
+                        <td>M.A., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+           
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Hindi</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/h1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Dr. Deepa Raga</td>
+                        <td>M.A., Ph.D.</td>
+                        <td>Assistant Professor</td>
+                        <td>7353325555<br>deeparaga5161@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/h2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Shri. Maruti B.</td>
+                        <td>M.A., B.Ed., KSET and NET</td>
+                        <td>Assistant Professor</td>
+                        <td>9986990287<br>janakemaruti@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/h3.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Shri. Noor Pasha</td>
+                        <td>M.A., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Urdu</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u1.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Mrs. Syeda Kareemunnisa</td>
+                        <td>M.A., M.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+                   
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Economics</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/eco1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Dr. Santoshkumar Hangaragi</td>
+                        <td>M.A., M.Phil., Ph.D.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/eco2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Smt. Vachana Shri</td>
+                        <td>M.A., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>9901296980 <br>vachanaswamy12@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/eco3.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Smt. Meenakshi Patil</td>
+                        <td>M.A., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>9019190180<br>meenakshimarurkar44@gamil.com</td>
+                    </tr>
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Political Science</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/ps1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Mrs. Vanishri Yengunde</td>
+                        <td>M.A.,B.Ed.</td>
+                        <td>HOD and Lecturer</td>
+                        <td>8147225878<br>satvikyengunde@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/ps2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>	Mr. Sandeep Kumar</td>
+                        <td>M.A., B.Ed., KSET.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+                 
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Sociology</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/soc1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Dr. Hanamanthappa B. Sedamkar</td>
+                        <td>M.A., M.Ed., LL.B., KSET., Ph.D.</td>
+                        <td>HOD & Assistant Professor</td>
+                        <td>9902567224<br>drhbsedamkar@gmail.com</td>
+                    </tr>
+                   
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: History</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/his1.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Shivaraj G. Math</td>
+                        <td>M.A., M.Phil.</td>
+                        <td>HOD and Asst. Prof.</td>
+                        <td>9902563299<br>shivarajgmath115@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/his2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Dr. Shivleela Veerayya</td>
+                        <td>M.A., B.Ed., M.Phil., Ph.D.</td>
+                        <td>Asst. Prof.</td>
+                        <td>9986990287<br>Shivaliamathapati@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/his3.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Basavaraj S. Biradar</td>
+                        <td>M.A., B.Ed., TET</td>
+                        <td>Asst. Prof.</td>
+                        <td>9611219430<br>basawaraj1983@gmail.com</td>
+                    </tr>
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Commerce</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/c1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Dr. Laxmi Vishwanath</td>
+                        <td>M.com., Ph.D.</td>
+                        <td>HOD and Asst. Professor</td>
+                        <td>6362143773<br>laxmishapur@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/c2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Miss. Nagrani Palam</td>
+                        <td>M. Com., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>8494854947<br>ranipalan8@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/c3.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Mrs. Daivshala Savale</td>
+                        <td>M.Com., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>9980102312<br>shalusavle@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/c4.png" alt="Profile Pic" width="50"></td>
+                        <td>Mr. Vinayak Tandle</td>
+                        <td>M.Com</td>
+                        <td>Lecturer</td>
+                        <td>8050536322<br>Vinayakstandle@gmail.com</td>
+                    </tr>
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Physics</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/p1.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Dr. Sweta M. Nayak</td>
+                        <td>M.Sc., Ph.D.</td>
+                        <td>HOD and Asst. Prof.</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/p2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>	Sri. Praveen Purohit</td>
+                        <td>M.Sc., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/p3.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Miss. Sushma</td>
+                        <td>M.Sc., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/p4.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>	Smt. Shailaja Khandre</td>
+                        <td>M.Sc., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Chemistry</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cm1.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Dr. (Maj.) P.Vithal Reddy</td>
+                        <td>M.Sc., M.Phil., Ph.D.</td>
+                        <td>Principal, Assoc. Prof.</td>
+                        <td>9448584979<br>majdrpvreddy@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cm2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Anilkumar Anadure</td>
+                        <td>M.Sc., M.Phil.</td>
+                        <td>Vice-Principal, Assoc. Prof.</td>
+                        <td>99448678002<br>akanadure@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cm3.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Dr. Mallikarjun Kote</td>
+                        <td>M.Sc., M.Phil., Ph.D.</td>
+                        <td>Head and Asst. Prof.</td>
+                        <td>8867200407<br>kotemallu.2011@rediffmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cm4.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Dr. Goudappagouda</td>
+                        <td>M.Sc., Ph.D., PDF (JSPS Fellow), JRF-NET, KSET, GATE</td>
+                        <td>Asst. Prof.</td>
+                        <td>9607295489<br>goudappagouda11656@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cm5.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>	Miss Jyoti Kamble</td>
+                        <td>M.Sc., B.Ed.</td>
+                        <td>Lecture</td>
+                        <td>null</td>
+                    </tr>
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department:Mathematics</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/mat1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Smt. Radhika M.</td>
+                        <td>M.Sc., B.Ed.</td>
+                        <td>HOD and Lecturer.</td>
+                        <td>991650760<br>radhikamundase55@gmaail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/mat2.png" alt="Profile Pic" width="50"></td>
+                        <td>Miss. Geetashri C.</td>
+                        <td>M.Sc., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>7676363841</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/mat3.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Basavaraj S. Biradar</td>
+                        <td>M.A., B.Ed., TET</td>
+                        <td>Lecturer</td>
+                        <td>9008009711<br>nilkanthshetkar@gmail.com</td>
+                    </tr>
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Computer Science</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cs1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Vikram Dhannre</td>
+                        <td>M.C.A., M.Phil.</td>
+                        <td>HOD and Lecturer.</td>
+                        <td>9986724361<br>vikram.dhannre@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cs2.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Umakanth Deshmukh</td>
+                        <td>MCA</td>
+                        <td>Lecturer.</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cs3.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Kishorkumar Patil</td>
+                        <td>M.Sc.</td>
+                        <td>Lecturer.</td>
+                        <td>9902563299<br>shivarajgmath115@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cs4.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Rajmohan Pardeshi</td>
+                        <td>M.Sc., M.Phil.</td>
+                        <td>Lecturer.</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cs5.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sujata Hipparagi</td>
+                        <td>M.Sc. PGDCA</td>
+                        <td>Lecturer.</td>
+                        <td>9902563299<br>shivarajgmath115@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cs6.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Radhika Ranoji</td>
+                        <td>M.Sc.</td>
+                        <td>Lecturer.</td>
+                        <td>7892436881<br>radhika620@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/cs7.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Godavari .B</td>
+                        <td>MCA</td>
+                        <td>Lecturer.</td>
+                        <td>null</td>
+                    </tr>
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department:Botany</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/bt1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Dr.Suryawanshi Pooja</td>
+                        <td>M.Sc., Ph.D.</td>
+                        <td>H.O.D & Assistant Professor</td>
+                        <td>9739741570<br>poojasuryawanshi21@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/bt2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Jadhav Anil Kumar</td>
+                        <td>M.sc., B.Ed.</td>
+                        <td>	Lecturer</td>
+                        <td>8317386617<br>janilkumar138@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/bt3.png" alt="Profile Pic" width="50"></td>
+                        <td>	Nageshwari. Kashinath Swamy</td>
+                        <td>M.sc., B.Ed.</td>
+                        <td>	Lecturer</td>
+                        <td>8861364427 <br>swamynageswri88@gmail.com</td>
+                    </tr>
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Zoology</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/zoo1.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>	Dr. Reshma Sambanna</td>
+                        <td>M.Sc., Ph.D..</td>
+                        <td>Assistant Professor</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/zoo2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>	Smt. Pooja Mangalagi</td>
+                        <td>M.Sc., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+                
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department:Electronics</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/ec1.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>	Miss Gayatri Math</td>
+                        <td>M.Tech.</td>
+                        <td>HOD and Asst. Prof.</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/ec2.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>	Miss Priyadarshini</td>
+                        <td>M.Sc., B.Ed.</td>
+                        <td>Lecturer</td>
+                        <td>null</td>
+                    </tr>
+              
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Physical Education</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/pt1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Dr. Kaveri Papade</td>
+                        <td>M.P.Ed., M.Sc. in Yoga Ph.D.</td>
+                        <td>Physical Direction</td>
+                        <td>null</td>
+                    </tr>
+                
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Library</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/lb1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Dr. Mamata Melkundi</td>
+                        <td>M.Lib., Ph.d.</td>
+                        <td>	Librarian</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/lb2.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Sri. Chidanand B Math</td>
+                        <td>BA, B.Lib, M.Lib.</td>
+                        <td>Librarary Assistant</td>
+                        <td>9019086029<br>mathchidu@gmail.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/lb3.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Sachin M Shetkar</td>
+                        <td>B.C.A</td>
+                        <td>S.D.A</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/lb4.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Smt. Umadevi Pati</td>
+                        <td>PUC</td>
+                        <td>S.D.A</td>
+                        <td>null</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/lb5.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Sangappa Patil</td>
+                        <td>SSLC</td>
+                        <td>Attender</td>
+                        <td>null</td>
+                    </tr>
+                
+                   
+                   
+                    <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Department: Non-Teaching Staff (Aided)</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Date of joining</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/nta1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Sri. Sujitkumar B.</td>
+                        <td>B,Sc, B.Ed, B. Lib. Sc.</td>
+                        <td>Superintendent</td>
+                        <td>16/07/1999</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/nta2.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Sri. Purushottam R.</td>
+                        <td>PUC</td>
+                        <td>S. D. A</td>
+                        <td>16/01/1999</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/nta3.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Manjunath</td>
+                        <td>Dip. Mech. Eng.</td>
+                        <td>S.D.A</td>
+                        <td>14/05/2015</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/nta4.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Sri. Ayyub</td>
+                        <td>Dip. Elec. Eng.</td>
+                        <td>PS.D.A</td>
+                        <td>15/09/2015</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/nta5.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Shivaraj</td>
+                        <td>7th</td>
+                        <td>Peon</td>
+                        <td>14/09/2015</td>
+                    </tr>
+                 <!-- Add more rows as needed -->
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th colspan="5" class="department-headline">Non-Teaching Staff (Un-aided)</th>
+                    </tr>
+                    <tr>
+                        <th>Profile Pic</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Designation</th>
+                        <th>Date of joining</th>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/1.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Smt. Sunanda Hiremath</td>
+                        <td>B.Sc., PGDCA</td>
+                        <td>Comp. Prog.</td>
+                        <td>01/02/2012</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u2.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Bheemashankar K. B.</td>
+                        <td>B. Com.</td>
+                        <td>S. D. A</td>
+                        <td>01/03/2000</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u3.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Basavraj K. B.</td>
+                        <td>B.A.</td>
+                        <td>Typist</td>
+                        <td>26/04/1990</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u4.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Ramesh Khanapure</td>
+                        <td>B.Sc., PGDCA</td>
+                        <td>Comp. Opr.</td>
+                        <td>18/09/2007</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u5.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Sri. Santoshkumar N. K.</td>
+                        <td>B,Sc.</td>
+                        <td>	S. D. A.</td>
+                        <td>01/01/2012</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u6.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Shivanand Swamy</td>
+                        <td>SSLC</td>
+                        <td>	Attender</td>
+                        <td>01/02/1994</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u7.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Sri. Prakash Patil</td>
+                        <td>7th</td>
+                        <td>Peon</td>
+                        <td>14/09/2015</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u8.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Sri. Umakanth S.</td>
+                        <td>PUC</td>
+                        <td>Attender</td>
+                        <td>04/06/2018</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u9.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Gopal</td>
+                        <td>SSLC</td>
+                        <td>Garden Mali</td>
+                        <td>01/10/2004</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u10.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Basavaraj S.</td>
+                        <td>SSLC</td>
+                        <td>Peon</td>
+                        <td>01/02/2012</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u11.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Umakanth</td>
+                        <td>SSLC</td>
+                        <td>Attender</td>
+                        <td>29/06/2011</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u12.jpeg" alt="Profile Pic" width="50"></td>
+                        <td>Sri. Vaijinath T</td>
+                        <td>SSLC</td>
+                        <td>Night Watchman</td>
+                        <td>23/06/2010</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u5.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Sri. Rajshekar Bante</td>
+                        <td>SSLC</td>
+                        <td>Peon</td>
+                        <td>	06/07/2016</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u5.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Smt. Mahananda U.</td>
+                        <td>	SSLC</td>
+                        <td>Attender</td>
+                        <td>111/06/2019</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u15.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Smt. Laxmi</td>
+                        <td>7th</td>
+                        <td>Sweeper</td>
+                        <td>20/11/1989</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u16.jpg" alt="Profile Pic" width="50"></td>
+                        <td>	Smt. Babita</td>
+                        <td>7th</td>
+                        <td>Peon</td>
+                        <td>	01/08/2011</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u17.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Smt. Akthare Begam</td>
+                        <td>7th</td>
+                        <td>	Sweeper</td>
+                        <td>16/09/2013</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u5.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Smt. Rajamma</td>
+                        <td>7th</td>
+                        <td>Peon</td>
+                        <td>01/08/2015</td>
+                    </tr>
+                    <tr>
+                        <td><img src="dp/u5.jpg" alt="Profile Pic" width="50"></td>
+                        <td>Miss Sonamma Sangappa</td>
+                        <td>7th</td>
+                        <td>Attender</td>
+                        <td>18/01/2021</td>
+                    </tr>
+                 <!-- Add more rows as needed -->
+                </table>
+            </div>
+        </section>
+       
+        
+       
+
+
+
+
+        <footer>
+            <div class="foot">
+                <div class="row">
+                      <div class="col" id="company">
+          <h3>B.V.B</h3>
+                          <p>
+                            HKE Society is the prestigious educational institute of Karnataka has stressed to inculcate the value based education in all the institutions in fact it is the only organization which has been imparting higher education in backward region of the state, Bidar, Kalaburagi, Raichur and Yadgiri from past five decades.
+                          </p>
+                          <div class="social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+          
+                      <div class="col" id="services">
+                        <h3>Useful-links</h3>
+                        <div class="links">
+                           <a href="https://hkes.edu.in/">H.K.E. Society’s</a>
+                           <a href="https://gug.ac.in/">Gulbarga University</a>
+                           <a href="rti.html">RTI</a>
+                           <a href="https://ndl.iitkgp.ac.in/">National digital library of india</a>
+                        </div>
+                     </div>
+         
+                     <div class="col" id="useful-links">
+                        <h3>Links</h3>
+                        <div class="links">
+                           <a href="index.html">Home</a>
+                           <a href="vision and mission.html">Vision and Mission</a>
+                           <a href="iaac.html">IQAC</a>
+                           <a href="contact.html">Contact us</a>
+                        </div>
+                     </div>
+         
+                     <div class="col" id="contact">
+                         <h3>Contact</h3>
+                         <div class="contact-details">
+                            <i class="fa fa-location"></i>
+                            <p>Basava Nagar,opposite Big Bazar, <br> Manalli Road, Bidar</p>
+                         </div>
+                         <div class="contact-details">
+                            <i class="fa fa-phone"></i>
+                            <p>08482-235207</p>
+                         </div>
+                     </div>
+               </div>
+          
+                <div class="row">
+                      <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Email here...">
+                            <button><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+          
+                </div>
+          <div class="copy">
+            <p>Made By B.C.A,BVB  @ 2023 BVBCB.All Rights Reserved   </p>
+          </div>
+            </div>
+          </footer>
+          <script>
+            $(document).ready(function(){
+              // Enable the carousel
+              $('#myCarousel').carousel();
+          
+              // Set interval to automatically slide to the next item every 3 seconds (3000 milliseconds)
+              setInterval(function(){
+                $('#myCarousel').carousel('next');
+              }, 1000);
+            });
+          </script>
+          
+          <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <script  src="function.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Check if the element is in the viewport
+                function isInViewport(element) {
+                    var rect = element.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                }
+        
+                // Add animation class when the section is in the viewport
+                function addAnimationClass() {
+                    var presidentMessage = document.querySelector('.president-message');
+                    if (isInViewport(presidentMessage)) {
+                        presidentMessage.classList.add('animate');
+                    }
+                }
+        
+                // Initial check on page load
+                addAnimationClass();
+        
+                // Check on scroll
+                window.addEventListener('scroll', function () {
+                    addAnimationClass();
+                });
+            });
+        </script>
+         <script>
+            var currentScale = 1.0;
+            var scaleStep = 0.1;
+    
+            function zoomIn() {
+                currentScale += scaleStep;
+                applyScale();
+            }
+    
+            function zoomOut() {
+                currentScale -= scaleStep;
+                applyScale();
+            }
+    
+            function applyScale() {
+                var table = document.querySelector('table');
+                table.style.transform = 'scale(' + currentScale + ')';
+            }
+    
+            function downloadPdf() {
+                var pdfContainer = document.querySelector('body');
+                html2pdf(pdfContainer);
+            }
+        </script>
+        <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    </section>
+        
+          
+          </body>
+          
+          </html>

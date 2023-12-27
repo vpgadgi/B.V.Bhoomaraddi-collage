@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>B.V.Bhoomaraddi collage </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style>
+    /* Add this style to your existing stylesheet or create a new one */
+.president-message {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+}
+.container p{
+  font-size: 14px;
+  text-align: left;
+}
+
+.message-text {
+    flex: 1;
+   
+    padding-left: 100px ;
+    padding-right: 100px;
+}
+
+.president-photo img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.president-photo h4{
+  color: red;
+}
+
+
+@media (max-width: 768px){
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: hidden;
+  }
+.message-text{
+  
+  height: 160px;
+     
+  padding-left: 60px ;
+    padding-right: 60px;
+   
+}
+.message-text p{
+  font-size: 12px;
+}
+}
+
+
+.navbar{
+    background:linear-gradient(45deg, rgb(173, 153, 153),#130909)!important;
+    
+  
+}
+.navbar-toggler-icon{
+  color: #eee;
+}
+.dropdown{
+    border-radius:0;
+    border:0;
+}
+.dropdown-menu{
+    background: #0c73cc;
+    border:0;
+    top:100%;
+    border-radius:0px 0px 1px 1px;
+}
+.dropdown-item:hover{
+    background:#085ca5;
+    color:#fff;
+}
+.dropdown-menu a{
+    color:#fff;
+} 
+.navbar .nav-item .nav-link{
+    color:#fff !important; 
+    
+}
+.navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link{
+    color:white !important;
+    
+}
+.navc a{
+font-size: 16px;
+color: #fff;
+padding: 6px;
+}
+.navc{
+  margin-top: 4px;
+  width: 100%;
+}
+.navc li{
+  margin-right: 5px;
+  margin-left: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.dropdown-item{
+  font-size: 12px;
+}
+@media (max-width: 768px){
+  .navc a{
+font-size: 11px;
+padding: 4px;
+
+}
+.navc li{
+
+  padding-left: 1px;
+  padding-right: 1px;
+  
+}
+}
+.background-section {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust the height based on your design */
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+    height: 100%;
+    z-index: -1;
+}
+
+.background-image img {
+    width: 100%;
+  
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    text-align: center;
+    color: white;
+}
+
+.text-container h2 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 1.2em;
+    margin: 0;
+}
+.student{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        .notice-container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .notice-header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .notice-content {
+            font-size: 16px;
+            line-height: 1.6;
+            
+        }
+
+        .notice-content p{
+            text-align: center;
+        }
+        .committee-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .committee-table th,
+        .committee-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .committee-table th {
+            background-color: #f2f2f2;
+        }
+
+        .committee-table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .additional-notice {
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #ffc107;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        @media (max-width: 768px){
+            .student{
+                width: 100%;
+            }
+        }
+
+</style>
+<script>
+  	$(document).ready(function () {
+$('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+    });
+});
+</script>
+   
+  </head>
+
+ 
+<body class="top">
+    
+    <section>
+        <div class="brt">
+            <div class="socialtop">
+            <div class="top-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                 <a href="#"><i class="fa fa-twitter"></i></a>
+                 <a href="#"><i class="fa fa-instagram"></i></a>
+                 <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+          </div>
+    </section>
+       <section>
+            <div class="header">
+              <img src="hkelogo.png" alt="Logo 1" class="logo logo-left">
+              <div class="collage-name">
+                 <p class="hke"> H.K.E. Society's</p>
+                  <p class="bold-text">B.V.BHOOMARADDI College of Arts, Science</p>
+                  <p class="bold-text">and Commerce , Bidar</p>
+              </div>
+              <img src="bvblogo.jpg" alt="Logo 2" class="logo logo-right">
+          </div>
+          
+         
+          
+          </section>
+          <section class="navc">
+      			<nav class="navbar navbar-expand-sm   navbar-light bg-light">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+            
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                  </li>
+                  <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      About
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="history.html">College History<span class="sr-only">(current)</span> </a>
+                      <a class="dropdown-item" href="vision and mission.html">Vision & Mission</a>
+                      <a class="dropdown-item" href="president message.html">President's Message</a>
+                      <a class="dropdown-item" href="council members.html">Council Member's</a>
+                      <a class="dropdown-item" href="principal.html">Principal's Message</a>
+                      <a class="dropdown-item" href="awards.html">Awards</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Committe and cells
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="antiragging.html">Anti-ragging 21-22</a>
+                      <a class="dropdown-item" href="antisexual.html">Sexual harrasement cell 21-22</a>
+                      
+                      <a class="dropdown-item" href="grevillance.html">Student-Grievance-Redressal-Committee</a>
+                    </div>
+                  </li>
+                 
+                  <li class="nav-item dropdown dmenu">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Facilities
+                  </a>
+                  <div class="dropdown-menu sm-menu">
+                    <a class="dropdown-item" href="scout.html">N.C.C /N.S.S / Scouts & Guides</a>
+                    <a class="dropdown-item" href="health.html">Health Centre</a>
+                    <a class="dropdown-item" href="parking.html">Parking</a>
+                    <a class="dropdown-item" href="gymnasium.html">Gymnasium</a>
+                    <a class="dropdown-item" href="library.html">Library</a>
+                    <a class="dropdown-item" href="games.html">Games & Sports</a>
+                    <a class="dropdown-item" href="canteen.html">Cateen</a>
+                    <a class="dropdown-item" href="studentwelfare.html">Student Welfare Office</a>
+                   
+                    
+                  </div>
+                </li>
+                <li class="nav-item dropdown dmenu">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Courses 
+                  </a>
+                  <div class="dropdown-menu sm-menu">
+                    <a class="dropdown-item" href="bca.html">B.C.A</a>
+                    <a class="dropdown-item" href="bse.html">B.Sc</a>
+                    <a class="dropdown-item" href="bcom.html">B.Com</a>
+                    <a class="dropdown-item" href="Baa.html">B.A</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown dmenu">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    staff
+                  </a>
+                  <div class="dropdown-menu sm-menu">
+                    <a class="dropdown-item" href="faci.html">Faculty </a>
+                    <a class="dropdown-item" href="dep.html">Departments</a>
+                    
+                  </div>
+                </li>
+                 <li class="nav-item dropdown dmenu">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    IQAC
+                  </a>
+                  <div class="dropdown-menu sm-menu">
+                    <a class="dropdown-item" href="iaac.html">IQAC</a>
+                    <a class="dropdown-item" href="iiqa.html">IIQA</a>
+                    <a class="dropdown-item" href="agar.html">AQAR Links 18-19 </a>
+                    <a class="dropdown-item" href="agar2.html">AQAR Links 19-20 </a>
+                    <a class="dropdown-item" href="naac.html">NAAC</a>
+                    <a class="dropdown-item" href="dvv.html">DVV</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                 
+                </ul>
+               
+              </div>
+            </nav>
+        </section>
+
+
+        <section class="background-section">
+            <div class="background-image">
+                <!-- Add your background image URL here -->
+                <img src="update2.png" alt="Background Image">
+            </div>
+            <div class="overlay">
+                <div class="container">
+                    <div class="text-container">
+                        <h2>
+                            Grevillance 
+                        </h2>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+      <div class="student">
+        <!-- Student Grievance & Redressal Committee Meeting Section -->
+        <div class="notice-container">
+            <div class="notice-header">
+                NOTICE
+            </div>
+            <div class="notice-content">
+                <p>
+                    HKE Society’s B V Bhoomaraddi College of Arts, Science and Commerce, Bidar<br>
+                    Student Grievance & Redressal Committee for the Academic Year 2021-2022
+                </p>
+                <p>
+                    Date: <span style="font-weight: bold;">11-08-2022</span><br>
+                    The Student Grievance & Redressal committee meeting held on 11-08-2022 in the Department of Computer Science. The following members attended the meeting.
+                </p>
+                <table class="committee-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Designation</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dr. Mallikarjun Kote</td>
+                            <td>SWO</td>
+                            <td>Co-ordinator</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. Deepa Raga</td>
+                            <td>NSS pro Officer</td>
+                            <td>Member</td>
+                        </tr>
+                        <tr>
+                            <td>Dr. H B Sedamkar</td>
+                            <td>YRC Officer</td>
+                            <td>Member</td>
+                        </tr>
+                        <tr>
+                            <td>Shivaj G. Math</td>
+                            <td>Dept. of History</td>
+                            <td>Member</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <strong>The Student grievances posted by the students during July 2021 to September 2021 were discussed in the meeting.</strong>
+                </p>
+                <p>
+                    <strong>Student Grievances are:</strong>
+                </p>
+                <ul>
+                    <li>Provide rest room for girls students</li>
+                    <li>Suggested to maintain cleanliness of girls washroom.</li>
+                    <li>Suggested to arrange Farewell & Fresher’s party.</li>
+                    <li>Suggested to maintain good quality food and hygienic in canteen.</li>
+                </ul>
+                <p>
+                    <strong>Action taken on suggestion & Student Grievances Redressal:</strong>
+                </p>
+                <ul>
+                    <li>Provided rest room for girls under process</li>
+                    <li>Maintaining the Cleanliness & Hygienic girls washroom & ladies room</li>
+                    <li>Application for arranging Farewell & Fresher’s party has been submitted & it is under process</li>
+                    <li>Application to maintain good quality food and hygienic condition in college canteen is submitted & it is under process</li>
+                </ul>
+                <p>
+                    <strong>Dr. Mallikarjun Kote<br>Co-ordinator</strong>
+                </p>
+            </div>
+        </div>
+    </student>
+       
+
+
+
+
+        <footer>
+            <div class="foot">
+                <div class="row">
+                      <div class="col" id="company">
+          <h3>B.V.B</h3>
+                          <p>
+                            HKE Society is the prestigious educational institute of Karnataka has stressed to inculcate the value based education in all the institutions in fact it is the only organization which has been imparting higher education in backward region of the state, Bidar, Kalaburagi, Raichur and Yadgiri from past five decades.
+                          </p>
+                          <div class="social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                      </div>
+          
+                      <div class="col" id="services">
+                        <h3>Useful-links</h3>
+                        <div class="links">
+                           <a href="https://hkes.edu.in/">H.K.E. Society’s</a>
+                           <a href="https://gug.ac.in/">Gulbarga University</a>
+                           <a href="rti.html">RTI</a>
+                           <a href="https://ndl.iitkgp.ac.in/">National digital library of india</a>
+                        </div>
+                     </div>
+         
+                     <div class="col" id="useful-links">
+                        <h3>Links</h3>
+                        <div class="links">
+                           <a href="index.html">Home</a>
+                           <a href="vision and mission.html">Vision and Mission</a>
+                           <a href="iaac.html">IQAC</a>
+                           <a href="contact.html">Contact us</a>
+                        </div>
+                     </div>
+         
+                     <div class="col" id="contact">
+                         <h3>Contact</h3>
+                         <div class="contact-details">
+                            <i class="fa fa-location"></i>
+                            <p>Basava Nagar,opposite Big Bazar, <br> Manalli Road, Bidar</p>
+                         </div>
+                         <div class="contact-details">
+                            <i class="fa fa-phone"></i>
+                            <p>08482-235207</p>
+                         </div>
+                     </div>
+               </div>
+          
+                <div class="row">
+                      <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Email here...">
+                            <button><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+          
+                </div>
+          <div class="copy">
+            <p>Made By B.C.A,BVB  @ 2023 BVBCB.All Rights Reserved   </p>
+          </div>
+            </div>
+          </footer>
+          <script>
+            $(document).ready(function(){
+              // Enable the carousel
+              $('#myCarousel').carousel();
+          
+              // Set interval to automatically slide to the next item every 3 seconds (3000 milliseconds)
+              setInterval(function(){
+                $('#myCarousel').carousel('next');
+              }, 1000);
+            });
+          </script>
+          
+          <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <script  src="function.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Check if the element is in the viewport
+                function isInViewport(element) {
+                    var rect = element.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                }
+        
+                // Add animation class when the section is in the viewport
+                function addAnimationClass() {
+                    var presidentMessage = document.querySelector('.president-message');
+                    if (isInViewport(presidentMessage)) {
+                        presidentMessage.classList.add('animate');
+                    }
+                }
+        
+                // Initial check on page load
+                addAnimationClass();
+        
+                // Check on scroll
+                window.addEventListener('scroll', function () {
+                    addAnimationClass();
+                });
+            });
+        </script>
+        
+          
+          </body>
+          
+          </html>
