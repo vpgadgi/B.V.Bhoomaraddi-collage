@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.V.Bhoomaraddi collage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .pdf-container {
+            width: 100%;
+            height: 99vh;
+            overflow: auto;
+            background-color: #f0f0f0;
+        }
+
+        .pdf-page {
+            max-width: 50%;
+            
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-bottom: 1px solid #ccc; /* Add a border between pages */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+    body {
+        width: 100%;
+        overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
+    }
+
+    .controls {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+        
+    }
+
+    .pdf-container {
+     
+        height: 400px; /* Change from fixed height to auto */
+        position: static;
+        overflow-x: hidden; /* Add this line to prevent horizontal scrolling */
+    }
+
+    .pdf-page {
+        max-width: 100%; /* Change from 50% to 100% */
+        box-sizing: border-box;
+        height: 100px; /* Add this line to include padding and border in the width */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button onclick="zoomIn()">Zoom In</button>
+        <button onclick="zoomOut()">Zoom Out</button>
+        <button onclick="downloadPdf()">Download</button>
+    </div>
+
+    <div class="pdf-container">
+        <div class="pdf-page">
+            <img src="rar/compositionofiqac_2019_2020 (1)_page-0001.jpg" alt="PDF Page 1">
+        </div>
+       
+        <!-- Add more pages as needed -->
+    </div>
+
+    <script>
+        var currentScale = 1.0;
+        var scaleStep = 0.1;
+
+        function zoomIn() {
+            currentScale += scaleStep;
+            applyScale();
+        }
+
+        function zoomOut() {
+            currentScale -= scaleStep;
+            applyScale();
+        }
+
+        function applyScale() {
+            var pdfPages = document.querySelectorAll('.pdf-page img');
+            pdfPages.forEach(function(page) {
+                page.style.transform = 'scale(' + currentScale + ')';
+            });
+        }
+
+        function downloadPdf() {
+            var pdfContainer = document.querySelector('.pdf-container');
+            html2pdf(pdfContainer);
+        }
+
+        // Library to convert HTML to PDF
+        // Include the library in your project: https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js
+        // Note: Make sure to check the licensing terms of the library.
+        </script>
+        <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    </body>
+    </html>
